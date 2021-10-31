@@ -1,0 +1,18 @@
+﻿@model  IEnumerable<RantingService2.Models.Comment>
+
+
+@{
+    ViewBag.Title = "CommentResult";
+}
+
+
+<h2>Comments</h2>
+<div>
+    @Html.ActionLink("Rate", "Index", "Home")
+</div>
+@foreach (var item in Model)
+{
+    @Html.Partial("_Result", item)
+}
+
+
