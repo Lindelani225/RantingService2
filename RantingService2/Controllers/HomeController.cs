@@ -10,6 +10,7 @@ namespace RantingService2.Controllers
     public class HomeController : Controller
     {
         private CommentContext db = new CommentContext();
+        //Get method
         public ActionResult Index()
         {
            
